@@ -1,0 +1,18 @@
+@mixin backgroundImage($wayToImage) {
+    background-image: url($wayToImage);
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+@mixin objectPlacement($align-items,$justify) {
+    justify-content: $justify;
+    align-items: $align-items;
+}
+@mixin objectSize($width,$height) {
+    width: $width;
+    height: $height;
+}
+@mixin fontSize($size){
+    font-size: $size;
+    text-align: center;
+}

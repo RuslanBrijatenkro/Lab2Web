@@ -1,0 +1,65 @@
+@import './mixins.scss';
+
+.content_popular_concerts
+{
+    width: 100%;
+    display:grid;
+    grid-template-rows: 10fr 1fr;
+    height: 656px;
+    .background
+    {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+}
+.header_actual_concerts
+{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 80%;
+    align-items: center;
+    button
+    {
+        margin: auto;
+        @include objectSize(70px,70px);
+        background-color: transparent;
+        border-width: 0px;
+        filter: invert(1);
+    }
+    .right
+    {
+        background-image: url("./images/next.svg");
+    }
+    .left
+    {
+        transform: scale(-1,1);
+        background-image: url("./images/next.svg");
+    }
+}
+.header_actual_concerts_slider
+{
+    margin: auto;
+    @include objectSize(20%,100%);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    list-style-type: none;
+    li
+    {
+        margin:auto;
+        button{
+            width: 20px;
+            height: 20px;
+            border-width: 0px;
+            background-color: transparent;
+            background-image: url("./images/circle.svg");
+            background-position: center center; 
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+        .slider1,.slider2,.slider3{
+            filter: invert(1);
+        }
+    }
+}

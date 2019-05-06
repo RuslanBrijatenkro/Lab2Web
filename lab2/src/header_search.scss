@@ -1,0 +1,21 @@
+@import './mixins.scss';
+@import './extends.scss';
+@import './variables.scss';
+.header_center_menu_submenu
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+        .header_search
+        {
+            @include objectSize($imgSize,$imgSize);
+            margin: auto;
+            @extend %button;
+            @include backgroundImage("./images/search.svg");
+        }
+        .header_img
+        {
+            @include objectSize($imgSize,$imgSize);
+            margin: auto;
+        } 
+    }

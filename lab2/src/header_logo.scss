@@ -1,0 +1,22 @@
+@import './extends.scss';
+@import './mixins.scss';
+@import './variables.scss';
+@import './default.scss';
+.Logo{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 50px;
+
+    .header_project_name
+    {
+        margin: auto;
+    }
+    .header_center_menu_pop_up_menu_button
+    {
+        @include objectSize($imgSize,$imgSize);
+        margin: auto;
+        @extend %button;
+        @include backgroundImage("./images/menu.svg");
+    }
+}

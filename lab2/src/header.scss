@@ -1,0 +1,17 @@
+@import './extends.scss';
+.header_center_menu
+{
+    width: 100%;
+    z-index: 1;
+    @extend %textSize;  
+    position: fixed;
+    background-color:#EC174D;
+    color:#FFFFFF;
+    display: grid;
+    grid-template-columns: 3fr 12fr 5fr;
+    height: 50px;
+    img
+    {
+        @extend %imgwidthHeight;
+    }
+}
