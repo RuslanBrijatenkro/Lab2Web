@@ -1,5 +1,6 @@
 import React from 'react';
 import AdvSearch from './adv_search.jsx';
+import './adv_search_list.scss';
 
 export default function AdvSearchList({options}) {
     console.log(options)

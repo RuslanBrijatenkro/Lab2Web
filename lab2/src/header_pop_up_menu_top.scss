@@ -1,0 +1,28 @@
+@import './mixins.scss';
+@import './variables.scss';
+.header_pop_up_menu_top{
+    display: grid;
+    margin-top:10%;
+    grid-template-columns: 1fr 6fr;
+    .exit_button
+    {
+        display: grid;
+        @include objectPlacement(center,right);
+        button
+        {
+            @include backgroundImage("/images/exit.svg");
+            background-color: transparent;
+            border-width: 0px;
+            transform: scale(-1, 1);
+            @include objectSize($imgSize,$imgSize);
+        }
+    }
+    .logo
+    {
+        color: #EC174D;
+        display: grid;
+        font-size: $fontSizeH;
+        @include objectPlacement(center,center);
+        width: 80%;
+    }       
+}

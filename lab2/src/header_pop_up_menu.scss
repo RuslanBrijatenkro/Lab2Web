@@ -1,0 +1,12 @@
+@import './mixins.scss';
+.header_pop_up_menu{
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    border-style: solid;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.5);
+    border-width: 1px;
+    @include objectSize(25%,600px);
+    text-align: center;
+}
