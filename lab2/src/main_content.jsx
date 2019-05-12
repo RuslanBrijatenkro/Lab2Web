@@ -1,13 +1,16 @@
 import React from 'react';
 import './main_content.scss';
-import ConcertList from './concerts_list';
-
+import ConcertList from './conserts_list';
+import list from './information';
+import AdvSearchList from './adv_search_list';
+import options from './adv_search_info';
 function MainContent() {
     return(
-        <div class="content_all_concerts">
-            <p class="name">Все концерты</p>
+        <div className="content_all_concerts">
+            <p className="name">Все концерты</p>
             <div className="concerts_search">
-                <ConcertList></ConcertList>
+                <ConcertList concerts={list}></ConcertList>
+                <AdvSearchList options={options}></AdvSearchList>
             </div>
         </div>
         
