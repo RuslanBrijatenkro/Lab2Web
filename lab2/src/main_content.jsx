@@ -4,16 +4,24 @@ import ConcertList from './conserts_list';
 import list from './information';
 import AdvSearchList from './adv_search_list';
 import options from './adv_search_info';
-function MainContent() {
+import {connect} from 'react-redux'
+import { getSearchFieldValue } from './actions'
+
+function MainContent({searchValue, getSearchFieldValue}) {
     return(
         <div className="content_all_concerts">
             <p className="name">Все концерты</p>
             <div className="concerts_search">
-                <ConcertList concerts={list}></ConcertList>
-                <AdvSearchList options={options}></AdvSearchList>
+                <ConcertList fieldValue={searchValue} concerts={list}></ConcertList>
+                <AdvSearchList setValue={getSearchFieldValue} options={options}></AdvSearchList>
             </div>
         </div>
-        
     );
   }
-  export default MainContent;
+  const mapStateToProps = (state) =>({
+      searchValue: state.ui.searchValue
+  })
+  const mapDispatchToProps = {
+    getSearchFieldValue
+  }
+  export default connect(mapStateToProps, mapDispatchToProps)(MainContent);

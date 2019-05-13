@@ -2,6 +2,7 @@ import './header_search.scss';
 import telephone1 from './images/telephone1.svg';
 import email from './images/email.svg';
 import React from 'react';
+
 function HeaderLogo() {
     return(
         <div className="header_center_menu_submenu">

@@ -2,8 +2,11 @@ import React from 'react';
 import Concerts from './conserts';
 import './concert_list.scss';
 
-export default function ConcertList({concerts}) {
-    const concertsElements = concerts.map(concert => 
+function ConcertList({concerts,fieldValue}) {
+
+    const mas = concerts.filter((element) => element.description.includes(fieldValue))
+
+    const concertsElements = mas.map(concert => 
         <Concerts concert={concert}></Concerts>
         )
     return(
@@ -12,3 +15,5 @@ export default function ConcertList({concerts}) {
          </ul>
     )
  }
+
+ export default ConcertList

@@ -1,7 +1,15 @@
 export default [
     {
         "name":"qwerty",
-        "description":"description"
+        "description":"1"
+    },
+    {
+        "name":"qwerty",
+        "description":"2"
+    },
+    {
+        "name":"qwerty",
+        "description":"3"
     },
     {
         "name":"qwerty",
@@ -9,18 +17,10 @@ export default [
     },
     {
         "name":"qwerty",
-        "description":"description"
+        "description":"5"
     },
     {
         "name":"qwerty",
-        "description":"description"
-    },
-    {
-        "name":"qwerty",
-        "description":"description"
-    },
-    {
-        "name":"qwerty",
-        "description":"description"
+        "description":"6"
     }
 ]
