@@ -1,0 +1,21 @@
+@import './mixins.scss';
+@import './variables.scss';
+.content_all_concerts
+    {
+        margin-left:3%;
+        margin-right:3%;
+        display: grid;
+        grid-template-rows: 1fr 20fr;
+        align-items: center;
+        .name
+        {
+            @include fontSize($fontSizeH);
+        }
+        .concerts_search
+        {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap:5%;
+            height :100%;
+        }   
+    }

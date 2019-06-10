@@ -1,0 +1,23 @@
+@import './variables.scss';
+@import './extends.scss';
+@import './mixins.scss';
+.list_concert1
+{
+    margin:5%;
+    @extend %border;
+    display: grid;
+    grid-template-rows: repeat(2,2fr) 1fr 1fr;
+    img
+    {
+        width: 100%;
+    }
+    .concert_description
+    {
+        @include fontSize($fontSizeL);
+    }
+    button
+    {
+        margin: auto;
+        @include objectSize(40%,40%);
+    }
+}

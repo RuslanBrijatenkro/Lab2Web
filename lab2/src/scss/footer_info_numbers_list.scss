@@ -1,0 +1,10 @@
+.footer_info-container_numbers
+{
+    .telephoneNumbers
+    {
+        height: 100%;
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        list-style-type: none;
+    }
+}

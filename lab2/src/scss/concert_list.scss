@@ -1,0 +1,10 @@
+@import './variables.scss';
+@import './extends.scss';
+@import './mixins.scss';
+.all_concerts_list
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    list-style-type: none;
+}

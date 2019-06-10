@@ -1,3 +1,0 @@
-export default {
-    GET_SEARCH_FIELD_VALUE: 'GET_SEARCH_FIELD_VALUE'
-}
